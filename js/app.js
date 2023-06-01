@@ -95,7 +95,7 @@ particlesJS('particles-js',
           "speed": 3
         },
         "repulse": {
-          "distance": 200
+          "distance": 100
         },
         "push": {
           "particles_nb": 4
@@ -108,7 +108,7 @@ particlesJS('particles-js',
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
-      "background_color": "#b61924",
+      "background_color": "#152025",
       "background_image": "",
       "background_position": "50% 50%",
       "background_repeat": "no-repeat",
