@@ -3,45 +3,55 @@
     <head>
         <meta charset="utf-8">
         <title>Portfolio Allan LEGRAND</title>
-        <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
         <meta name="author" content="Allan Legrand" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" media="screen" href="css/style.css">
     </head>
     <body>
-        <!-- particles.js container -->
-        
-        <section id="accueil" class="accueil">
-            <div id="particles-js">
-                <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1905" height="980"></canvas>
-            </div>
-            <div></div>
-            <div class="text text1">Bonjour, mon nom est</div>
-            <div class="text text2">Allan Legrand.</div>
-            <div class="text text3">Je suis un étudiant en informatique.</div>
-            <div class="text text4">J'ai 18 ans et je suis actuellement en première année à l'<a class="lien" href="https://www-iut.univ-lehavre.fr/" target="_blank">IUT du Havre</a> et voici mon portofolio.</div>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        Accueil
+                    </li>
+                    <li>
+                        Compétences
+                    </li>
+                    <li>
+                        Projets personnels
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="accueil">
+            <div class="bienvenue">Bienvenue,</div>
+            <div class="nom">Je suis Allan LEGRAND</div>
+            <div class="accueil_text">Je suis un étudiant de l'<a href="https://www-iut.univ-lehavre.fr/">IUT du Havre</a> en informatique, je m'intéresse à la programmation, aux mathématiques et a la cybersécurité.</div>
             
-            <div class="">
-			    <a class="button" href="#presentation">
-				    <p>Démarrer</p>
-				    <svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-				        <path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-			        	<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/>
-				    </g></svg>
-			    </a>
-		    </div>
+            <button type="button" onclick="window.location.href='#presentation';">
+                Commencer 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </button>
         </section>
+
         <section id="presentation" class="presentation">
-            <div style="padding:20px;"></div>
-            <span class="titre1">Présentation<span>
+            <div class="titre">Présentation</div>
+            <p class="paragraphe">Bonjour mon nom est Allan LEGRAND et j'ai 18 ans. J'aime developpé pendant mon temps libre.
+                Lors de la rentré 2022, j'ai pu intégré l'IUT du havre en filière informatique, où j'ai pu approfondir 
+                mes connaissances en informatique, notamment dans les languages de programmation java, sql et bash. J'ai aussi pu apprendre
+                les bases de la communication, de l'économie et m'ameliorer dans les domaines des mathématiques et de l'anglais.
+            </p>
+            <img src="">
         </section>
-        <section id="projet" class="projet">
-        </section>
+
         <footer>
-            <div style="padding:20px;"></div>
-            <div></div>
         </footer>
-        <script src="js/particles.js"></script>
-        <script src="js/app.js"></script>
+        
+        
     </body>
 </html>

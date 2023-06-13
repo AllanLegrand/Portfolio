@@ -1,0 +1,175 @@
+@font-face {
+    font-family: robotoMono_Regular;
+    src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: robotoMono_Bold;
+    src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: robotoMono_Thin;
+    src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Thin.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: spaceGrotesk_Bold;
+    src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: spaceGrotesk_Regular;
+    src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-Regular.ttf");
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    color: white;
+    background: #161b22;
+    font-family: spaceGrotesk_Bold;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul:hover {
+    color: grey;
+}
+
+nav ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.accueil {
+    padding-top: 5%;
+    position: relative;
+    background: linear-gradient(#10141a, #181b41);
+    
+    padding-bottom: 6%;
+    overflow: hidden;
+}
+
+.bienvenue {
+    margin-top: 8%;
+    margin-left: 15%;
+    color: lightskyblue;
+    font-family: robotoMono_Regular;
+    font-size: 45px;
+}
+
+.nom {
+    margin-left: 15%;
+    color: cadetblue;
+    font-family: robotoMono_Bold;
+    font-size: 54px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.accueil_text {
+    margin-left: 15%;
+    color: lightskyblue;
+    max-width: 800px;
+    line-height: 1.4;
+    font-family: robotoMono_Thin;
+    font-size: 20px;
+    padding-bottom: 5%;
+    
+}
+
+a
+{
+    display: inline-block;
+    position: relative;
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration:underline;
+}
+
+button {
+    gap: 10px;
+    font-family: robotoMono_Bold;
+    margin-left: 15%;
+    border-radius: 40px;
+    border: 2px solid lightskyblue;
+    color: lightskyblue;
+    background-color: transparent;
+    padding: 15px 35px 15px 40px;
+    text-decoration: none;
+    display: flex;
+    pointer-events: all;
+    
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:lightskyblue;
+    color:#161b22; 
+    fill: #161b22;
+    border-color: #161b22;
+}
+
+button:hover path {
+    d: path("M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z");
+}
+
+.presentation
+{
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.titre
+{
+    font-family: spaceGrotesk_Bold;
+    font-size: 50px;
+    color:#181b41;
+    margin-bottom: 1%;
+}
+
+.paragraphe
+{
+    margin-top: 20px;
+    font-family: spaceGrotesk_Regular;
+    display: flex;
+    gap: 100px 100px;
+    width: 100%;
+    max-width: 800px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.img
+{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
+}
