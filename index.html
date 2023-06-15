@@ -11,25 +11,40 @@
             <nav>
                 <ul>
                     <li>
-                        Accueil
+                        <a href="#accueil">Accueil</a>
                     </li>
+
                     <li>
-                        Compétences
+                        <a href="#presentation">Présentation</a>
                     </li>
+
                     <li>
-                        Projets personnels
+                        <a href="#competences">Compétences</a>
+                        <ul class="sous">
+                            <li><a href="#" style="color: #c00000;">Compétence 1</a></li>
+                            <li><a href="#" style="color: #f79152;">Compétence 2</a></li>
+                            <li><a href="#" style="color: #ffc000;">Compétence 3</a></li>
+                            <li><a href="#" style="color: #92d050;">Compétence 4</a></li>
+                            <li><a href="#" style="color: #07348f;">Compétence 5</a></li>
+                            <li><a href="#" style="color: #7c01be;">Compétence 6</a></li>
+                        </ul>
                     </li>
+
                     <li>
-                        Contact
+                        <a href="#projet">Projets personnels</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <section class="accueil">
+        <section id="accueil" class="accueil">
             <div class="bienvenue">Bienvenue,</div>
             <div class="nom">Je suis Allan LEGRAND</div>
-            <div class="accueil_text">Je suis un étudiant de l'<a href="https://www-iut.univ-lehavre.fr/">IUT du Havre</a> en informatique, je m'intéresse à la programmation, aux mathématiques et a la cybersécurité.</div>
+            <div class="accueil_text">Je suis un étudiant de l'<a class="link" href="https://www-iut.univ-lehavre.fr/">IUT du Havre</a> en informatique, je m'intéresse à la programmation, aux mathématiques et a la cybersécurité.</div>
             
             <button type="button" onclick="window.location.href='#presentation';">
                 Commencer 
@@ -40,16 +55,47 @@
         </section>
 
         <section id="presentation" class="presentation">
-            <div class="titre">Présentation</div>
+            <h1>Présentation</h1>
             <p class="paragraphe">Bonjour mon nom est Allan LEGRAND et j'ai 18 ans. J'aime developpé pendant mon temps libre.
                 Lors de la rentré 2022, j'ai pu intégré l'IUT du havre en filière informatique, où j'ai pu approfondir 
                 mes connaissances en informatique, notamment dans les languages de programmation java, sql et bash. J'ai aussi pu apprendre
                 les bases de la communication, de l'économie et m'ameliorer dans les domaines des mathématiques et de l'anglais.
             </p>
-            <img src="">
+            
+        </section>
+
+        <section id="competences" class="competences">
+            <h1>Compétences</h1>
+            <div class="container">
+                <a href="./html/competence1.html"><div class="box c1">
+                    <h2>Compétence 1 : Réaliser un développement d’application</h2>
+                    <p class="paragraphe">Développer c’est-à-dire concevoir, coder, tester et intégrer une solution informatique pour un client.</p>
+                </div></a>
+                <a href="./html/competence2.html"><div class="box c2">
+                    <h2>Compétence 2 : Optimiser des Applications informatiques</h2>
+                    <p class="paragraphe">Développer c’est-à-dire concevoir, coder, tester et intégrer une solution informatique pour un client.</p>
+                </div></a>
+                <a href="./html/competence3.html"><div class="box c3">
+                    <h2>Compétence 3 : Administrer des Systèmes informatiques communicants complexes</h2>
+                    <p class="paragraphe">Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d’une organisation.</p>
+                </div></a>
+                <a href="./html/competence4.html"><div class="box c4">
+                    <h2>Compétence 4 : Gérer des Données de l'information</h2>
+                    <p class="paragraphe">Concevoir, gérer, administrer et exploiter les données de l’entreprise et mettre à disposition toutes les informations pour un bon pilotage de l’entreprise.</p>
+                </div></a>
+                <a href="./html/competence5.html"><div class="box c5">
+                    <h2>Compétence 5 : Conduire un projet</h2>
+                    <p class="paragraphe">Satisfaire les besoins des utilisateurs au regard de la chaîne de valeur du client, organiser et piloter un projet informatique avec des méthodes classiques ou agiles.</p>
+                </div></a>
+                <a href="./html/competence6.html"><div class="box c6">
+                    <h2>Compétence 6 : Travailler dans une équipe informatique</h2>
+                    <p class="paragraphe">Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.</p>
+                </div></a>
+            </div>
         </section>
 
         <footer>
+            <div></div>
         </footer>
         
         
