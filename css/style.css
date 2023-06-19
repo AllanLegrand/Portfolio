@@ -307,6 +307,17 @@ h2
     gap: clamp(20px, 7vw, 100px);
 }
 
+.bloc_projet
+{
+    z-index: 9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: -100px;
+}
+
 footer
 {
     background-color:cornflowerblue;
