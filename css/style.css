@@ -1,324 +1,406 @@
 @font-face {
-    font-family: robotoMono_Regular;
-    src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Regular.ttf");
-    font-display: swap;
+	font-family: robotoMono_Regular;
+	src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Regular.ttf");
+	font-display: swap;
 }
 
 @font-face {
-    font-family: robotoMono_Bold;
-    src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Bold.ttf");
-    font-display: swap;
+	font-family: robotoMono_Bold;
+	src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Bold.ttf");
+	font-display: swap;
 }
 
 @font-face {
-    font-family: robotoMono_Thin;
-    src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Thin.ttf");
-    font-display: swap;
+	font-family: robotoMono_Thin;
+	src: url("../ressources/polices/Roboto_Mono/static/RobotoMono-Thin.ttf");
+	font-display: swap;
 }
 
 @font-face {
-    font-family: spaceGrotesk_Bold;
-    src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-Bold.ttf");
-    font-display: swap;
+	font-family: spaceGrotesk_Bold;
+	src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-Bold.ttf");
+	font-display: swap;
 }
 
 @font-face {
-    font-family: spaceGrotesk_Regular;
-    src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-Regular.ttf");
-    font-display: swap;
+	font-family: spaceGrotesk_Regular;
+	src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-Regular.ttf");
+	font-display: swap;
 }
 
 @font-face {
-    font-family: spaceGrotesk_SemiBold;
-    src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf");
-    font-display: swap;
+	font-family: spaceGrotesk_SemiBold;
+	src: url("../ressources/polices/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf");
+	font-display: swap;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-nav
-{
-    width: 100%;
-    z-index: 10;
-    margin: 0;
-    position: fixed;
+nav {
+	width: 100%;
+	z-index: 10;
+	margin: 0;
+	position: fixed;
 }
 
 nav ul {
-    position: fixed;
-    background: #161b22;
-    font-family: spaceGrotesk_Bold;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    text-decoration: none;
+	position: fixed;
+	background: #161b22;
+	font-family: spaceGrotesk_Bold;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	text-decoration: none;
 }
 
-nav ul li a{
-    display: inline-block;
-    padding: 20px;
-    color: white;
-    text-decoration: none;
+nav ul li a {
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: grey;
-    cursor: pointer;
-    border-bottom: 2px solid grey;
+	color: grey;
+	cursor: pointer;
+	border-bottom: 2px solid grey;
 }
 
-.sous
-{
-    display: none;
+.sous {
+	display: none;
 }
 
-.sous li 
-{
-    float: none;
-    width: 100%;
-    text-align: left;
+.sous li {
+	float: none;
+	width: 100%;
+	text-align: left;
 }
 
-.sous a{
-    padding: 10px;
+.sous a {
+	padding: 10px;
 }
 
-.sous a:hover{
-    background-color: RGBa(200,200,200,0.1);
+.sous a:hover {
+	background-color: RGBa(200, 200, 200, 0.1);
 }
 
-nav > ul li:hover .sous{
-    position: absolute;
-    z-index: 1000;
-    overflow: hidden;
-    display: block;
+nav>ul li:hover .sous {
+	position: absolute;
+	z-index: 1000;
+	overflow: hidden;
+	display: block;
 }
 
 .accueil {
-    position: relative;
-    background: linear-gradient(#10141a, #181b41);
-    padding-bottom: 4%;
-    overflow: hidden;
+	position: relative;
+	background: linear-gradient(#10141a, #181b41);
+	padding-bottom: 4%;
+	overflow: hidden;
 }
 
 .bienvenue {
-    margin-top: 8%;
-    margin-left: 15%;
-    color: lightskyblue;
-    font-family: robotoMono_Regular;
-    font-size: 45px;
+	margin-top: 8%;
+	margin-left: 15%;
+	color: lightskyblue;
+	font-family: robotoMono_Regular;
+	font-size: 45px;
 }
 
 .nom {
-    margin-left: 15%;
-    color: cadetblue;
-    font-family: robotoMono_Bold;
-    font-size: 54px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+	margin-left: 15%;
+	color: cadetblue;
+	font-family: robotoMono_Bold;
+	font-size: 54px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 }
 
 .accueil_text {
-    margin-left: 15%;
-    color: lightskyblue;
-    max-width: 800px;
-    line-height: 1.4;
-    font-family: robotoMono_Thin;
-    font-size: 20px;
-    padding-bottom: 5%;
-    
+	margin-left: 15%;
+	color: lightskyblue;
+	max-width: 800px;
+	line-height: 1.4;
+	font-family: robotoMono_Thin;
+	font-size: 20px;
+	padding-bottom: 5%;
+
 }
 
-.link
-{
-    display: inline-block;
-    position: relative;
-    color: lightseagreen;
-    text-decoration: none;
+.link {
+	display: inline-block;
+	position: relative;
+	color: lightseagreen;
+	text-decoration: none;
 }
 
-.link:hover
-{
-    text-decoration:underline;
+.link:hover {
+	text-decoration: underline;
 }
 
 button {
-    gap: 10px;
-    font-family: robotoMono_Bold;
-    margin-left: 15%;
-    border-radius: 40px;
-    border: 2px solid lightskyblue;
-    color: lightskyblue;
-    background-color: transparent;
-    padding: 15px 35px 15px 40px;
-    text-decoration: none;
-    display: flex;
-    pointer-events: all;
-    
-    align-items: center;
+	gap: 10px;
+	font-family: robotoMono_Bold;
+	margin-left: 15%;
+	border-radius: 40px;
+	border: 2px solid lightskyblue;
+	color: lightskyblue;
+	background-color: transparent;
+	padding: 15px 35px 15px 40px;
+	text-decoration: none;
+	display: flex;
+	pointer-events: all;
+
+	align-items: center;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color:lightskyblue;
-    color:#161b22; 
-    fill: #161b22;
-    border-color: #161b22;
+	cursor: pointer;
+	background-color: lightskyblue;
+	color: #161b22;
+	fill: #161b22;
+	border-color: #161b22;
 }
 
 button:hover path {
-    d: path("M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z");
+	d: path("M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z");
 }
 
-.presentation
+.presentation {
+	position: relative;
+	margin-top: 4%;
+	padding-bottom: 4%;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	z-index: 9;
+	flex-direction: column;
+}
+
+h1 + p + img 
 {
-    position: relative;
-    margin-top: 4%;
-    padding-bottom: 4%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+h1 {
+	font-family: spaceGrotesk_Bold;
+	font-size: 50px;
+	color: #181b41;
+	margin-bottom: 1%;
+}
+
+p {
+	padding-top: 20px;
+	font-family: spaceGrotesk_Regular;
+	gap: 100px 100px;
+	width: 100%;
+	max-width: 800px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.competences {
+	position: relative;
+	background-color: aquamarine;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.container_competences {
+	margin-top: 3%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 20px 20px;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+	row-gap: 20px;
+}
+
+.box {
+	padding: 40px 35px 40px 35px;
+	height: 100%;
+	border-radius: 50px;
+	background: linear-gradient(145deg, #16183b, #1a1d46);
+	border-style: solid;
+	border-width: thick;
+	color: lightskyblue;
+}
+
+h2 {
+	text-align: center;
+	font-size: 20px;
+	font-family: spaceGrotesk_SemiBold;
+}
+
+.container_competences a {
+	text-decoration: none;
+}
+
+.box:hover {
+	color: white;
+}
+
+.c1:hover {
+	border-color: #640404;
+	background: linear-gradient(145deg, #ad0000, #cd0000);
+}
+
+.c2:hover {
+	border-color: #c35e27;
+	background: linear-gradient(145deg, #de834a, #ff9b58);
+}
+
+.c3:hover {
+	border-color: #b78809;
+	background: linear-gradient(145deg, #e6ad00, #ffcd00);
+}
+
+.c4:hover {
+	border-color: #5c8729;
+	background: linear-gradient(145deg, #83bb48, #9cdf56);
+}
+
+.c5:hover {
+	border-color: #002060;
+	background: linear-gradient(145deg, #062f81, #073899);
+}
+
+.c6:hover {
+	border-color: #68089a;
+	background: linear-gradient(145deg, #7001ab, #8501cb);
+}
+
+.projet {
+	align-items: center;
     display: flex;
-    align-items: center;
-    width: 100%;
-    z-index: 9;
     flex-direction: column;
+	margin-top: 4%;
+	padding-bottom: 4%;
 }
 
-h1
-{
-    font-family: spaceGrotesk_Bold;
-    font-size: 50px;
-    color:#181b41;
-    margin-bottom: 1%;
+table {
+	font-family: robotoMono_Regular;
+	border-collapse: collapse;
+	box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	margin: 0px auto;
+	border: 2px solid #073899;
 }
 
-.paragraphe
-{
-    padding-top: 20px;
-    font-family: spaceGrotesk_Regular;
-    gap: 100px 100px;
-    width: 100%;
-    max-width: 800px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+thead tr {
+	background-color: #073899;
+	color: white;
+	text-align: left;
 }
 
-.competences
-{
-    position: relative;
-    background-color:aquamarine;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+th,
+td {
+	padding: 15px 20px;
+	text-align: center;
 }
 
-.container_competences 
-{
-    margin-top: 3%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 20px 20px;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
-    row-gap: 20px;
-}
-.box 
-{
-    padding: 40px 35px 40px 35px;
-    height: 100%;
-    border-radius: 50px;
-    background: linear-gradient(145deg, #16183b, #1a1d46);
-    border-style: solid;
-    border-width: thick;
-    color: lightskyblue;
+th a {
+	text-decoration: none;
+	color: white;
 }
 
-h2
-{
-    text-align:center;
-    font-size: 20px;
-    font-family: spaceGrotesk_SemiBold;
+td a {
+	text-decoration: none;
+	color: #073899;
 }
 
-.container_competences a
-{
-    text-decoration: none;
+td:hover {
+	background-color: lightblue;
+	color: white;
 }
 
-.box:hover
-{
-    color: white;
+tbody tr,
+td,
+th {
+	border: 1px solid #ddd;
 }
 
-.c1:hover
-{
-    border-color: #640404;
-    background: linear-gradient(145deg, #ad0000, #cd0000);
+tbody tr:nth-child(even) {
+	background-color: #f3f3f3;
 }
 
-.c2:hover
-{
-    border-color: #c35e27;
-    background: linear-gradient(145deg, #de834a, #ff9b58);
-}
+@media screen and (max-width: 550px) {
+	body {
+		align-items: flex-start;
+	}
 
-.c3:hover
-{
-    border-color: #b78809;
-    background: linear-gradient(145deg, #e6ad00, #ffcd00);
-}
+	.table-style {
+		width: 100%;
+		margin: 0px;
+		font-size: 10px;
+	}
 
-.c4:hover
-{
-    border-color: #5c8729;
-    background: linear-gradient(145deg, #83bb48, #9cdf56);
-}
-
-.c5:hover
-{
-    border-color: #002060;
-    background: linear-gradient(145deg, #062f81, #073899);
-}
-
-.c6:hover
-{
-    border-color: #68089a;
-    background: linear-gradient(145deg, #7001ab, #8501cb);
-}
-
-.projet 
-{
+	th,
+	td {
+		padding: 10px 7px;
+	}
 
 }
 
-.container_projet
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    gap: clamp(20px, 7vw, 100px);
+.check {
+	fill : limegreen;
+	d: path("M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z");
 }
 
-.bloc_projet
-{
-    z-index: 9;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-right: -100px;
+.uncheck {
+	fill : red;
+	d: path("M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z");
 }
 
-footer
+footer {
+	background-color: cornflowerblue;
+	color: white;
+	padding: 4%;
+}
+
+.general {
+	position: relative;
+	color: #002060;
+}
+
+.general h1
 {
-    background-color:cornflowerblue;
+	font-size: 60px;
+	padding-top: 6%;
+	padding-bottom: 1%;
+	text-align: center;
+}
+
+.general h2
+{
+	font-size: 40px;
+	padding-bottom: 2%;
+}
+
+.general h3
+{
+	font-size: 30px;
+	padding-bottom: 2%;
+	font-family: spaceGrotesk_SemiBold;
+}
+
+.general p
+{
+	padding: 0;
+	font-size: 20px;
+}
+
+.general li
+{
+	margin-left: 3%;
+	font-family: robotoMono_Regular;
+	font-size: 20px;
 }
